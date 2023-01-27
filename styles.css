@@ -1,0 +1,554 @@
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("fonts/Lato-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url("fonts/Lato-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("fonts/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "VarelaRound-Regular";
+    src: url("fonts/VarelaRound-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Myriad-Pro";
+    src: url("fonts/MYRIADPRO-REGULAR.OTF") format("opentype");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.etertaiment-block {
+    background-image: url("images/banner_background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+
+}
+
+.header .container {
+    padding: 45px 0 27px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.burger-menu {
+    cursor: pointer;
+}
+
+.menu-items {
+    display: flex;
+    list-style: none;
+    gap: 43px;
+    font-size: 16px;
+    font-family: "Lato-Regular", sans-serif;
+    color: rgb(38, 39, 45);
+    cursor: pointer;
+}
+
+.help-menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    cursor: pointer;
+}
+
+.help-menu-items {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+
+}
+
+.menu-item {
+    font-size: 16px;
+    font-family: "Lato-Regular", sans-serif;
+    color: rgb(38, 39, 45);
+}
+
+.menu-item:hover {
+    color: rgba(27, 28, 30, 0.4);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    border-radius: 21px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.get-app-btn {
+    cursor: pointer;
+    gap: 14px;
+    background-color: rgb(38, 125, 244);
+    width: 132px;
+    height: 42px;
+
+}
+
+.get-app-btn span {
+    font-size: 16px;
+    font-family: "Lato-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+
+}
+
+.begining-info {
+    padding-top: 90px;
+}
+
+.title {
+    font-size: 62px;
+    font-family: "Myriad-Pro", sans-serif;
+    color: rgb(38, 39, 45);
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.under-title {
+    font-size: 20px;
+    font-family: "Lato-Regular", sans-serif;
+    color: rgb(140, 143, 148);
+    line-height: 1.4;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 775px;
+    margin-bottom: 66px;
+}
+
+.watch-video-btn {
+    margin: 0 auto;
+    gap: 14px;
+    border-width: 1px;
+    border-color: rgba(38, 39, 45, 0.11);
+    border-style: solid;
+    width: 203px;
+    height: 48px;
+    border-radius: 25px;
+    margin-bottom: 55px;
+    cursor: pointer;
+}
+
+.header-iphone {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    height: 450px;
+}
+
+.about-app-info {
+    padding-top: 122px;
+    padding-bottom: 198px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.about-app-info__first-block {
+    display: flex;
+    gap: 103px;
+    margin-bottom: 125px;
+}
+
+.about-app-info__first-block-item {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.about-app-info__first-block-item svg {
+    transform: scale(0.92);
+    margin-bottom: 40px;
+
+}
+
+.about-app-info__first-block-item-title {
+    font-size: 26px;
+    font-family: "Lato-Light", sans-serif;
+    color: rgb(38, 39, 45);
+    margin-bottom: 45px;
+}
+
+.about-app-info__first-block-item-text {
+    font-size: 18px;
+    font-family: "Lato-Regular", sans-serif;
+    color: rgb(140, 143, 148);
+    line-height: 1.444;
+    max-width: 500px;
+
+}
+
+.about-app-info__first-block-item-text:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.about-app-info__second-block {
+    margin-top: 125px;
+    display: flex;
+    gap: 104px;
+    align-items: center;
+    margin-bottom: 75px;
+    margin-left: -250px;
+}
+
+
+.about-app-info__second-block-phone-img img {
+    max-width: 100%;
+}
+
+
+.about-app-info__second-block-info {
+    max-width: 485px;
+}
+
+.about-app-info__second-block-title {
+    font-size: 42px;
+    font-family: "VarelaRound-Regular", sans-serif;
+    color: rgb(38, 39, 45);
+    margin-bottom: 73px;
+}
+
+.about-app-info__second-block-text {
+    font-size: 20px;
+    font-family: "Lato-Regular", sans-serif;
+    color: rgb(140, 143, 148);
+    line-height: 1.4;
+    margin-bottom: 35px;
+}
+
+.text-second-part {
+    margin-bottom: 75px;
+}
+
+.about-app-info__second-block-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.huck-btn {
+    display: flex;
+    gap: 48px;
+    border-radius: 21px;
+    width: 200px;
+    height: 40px;
+    background-color: #267df4;
+    text-align: center;
+
+}
+
+.huck-btn span {
+    font-size: 16px;
+    font-family: "Lato-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.learn-more-btn {
+    border-width: 1px;
+    border-color: rgba(38, 39, 45, 0.11);
+    border-style: solid;
+    width: 140px;
+    height: 40px;
+
+    font-size: 16px;
+    font-family: "Lato-Regular", sans-serif;
+    color: rgb(38, 39, 45);
+    text-align: center;
+}
+
+
+.about-app-info__third-block {
+    overflow-x: hidden;
+    margin-top: 100px;
+    display: flex;
+    gap: 73px;
+    align-items: center;
+    margin-right: -450px;
+}
+
+
+.about-app-info__third-block-info {
+    max-width: 472px;
+}
+
+.about-app-info__third-block-title {
+    font-size: 42px;
+    font-family: "VarelaRound-Regular", sans-serif;
+    color: rgb(38, 39, 45);
+    margin-bottom: 73px;
+}
+
+.about-app-info__third-block-text {
+    font-size: 20px;
+    font-family: "Lato-Regular", sans-serif;
+    color: rgb(140, 143, 148);
+    line-height: 1.4;
+    margin-bottom: 35px;
+}
+
+.text-second-part {
+    margin-bottom: 70px;
+}
+
+.about-app-info__third-block-phone-img img {
+    max-width: 100%;
+}
+
+.partners {
+    font-size: 12px;
+    font-family: "Lato-Bold", sans-serif;
+    color: rgb(38, 39, 45);
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.about-app-info__third-block-logitips {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+}
+
+.presentation {
+    background-color: #f5f5f8;
+    padding-top: 145px;
+    padding-bottom: 131px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.presentation__title {
+    font-size: 42px;
+    font-family: "Myriad-Pro", sans-serif;
+    color: rgb(38, 39, 45);
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.presentation__name {
+    font-size: 12px;
+    font-family: "Lato-Bold", sans-serif;
+    color: rgb(140, 143, 148);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 42px;
+    margin-bottom: 47px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.slider div img:not(.main-screen img) {
+    box-shadow: 0 15px 20px 8px rgba(0, 0, 0, 0.09);
+}
+
+.presentation__bottom-text {
+    font-size: 12px;
+    font-family: "Lato-Bold", sans-serif;
+    color: rgba(58, 61, 75, 0.502);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 197px;
+}
+
+.presentation__bottom-title {
+    margin-top: 39px;
+    font-size: 42px;
+    font-family: "Myriad-Pro", sans-serif;
+    color: rgb(58, 61, 75);
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+
+.input-email {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-email input {
+    display: flex;
+    font-size: 16px;
+    font-family: "Lato-Regular", sans-serif;
+    color: rgb(48, 51, 63);
+    align-items: center;
+    padding-left: 27px;
+    padding-right: 175px;
+    border-width: 1px;
+    border-radius: 25px;
+    border-color: rgb(34, 35, 40, 0.2);
+    border-style: solid;
+    width: 500px;
+    height: 50px;
+}
+
+.input-email input::placeholder {
+    font-size: 16px;
+    font-family: "Lato-Regular", sans-serif;
+    color: rgb(58, 61, 75);
+}
+
+.input-email input:focus, .input-email input:active {
+    outline: none;
+}
+
+.send-invite {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    position: absolute;
+    border: none;
+    right: 5px;
+    background-color: rgb(111, 199, 84);
+    width: 164px;
+    height: 42px;
+}
+
+.send-invite span {
+    font-size: 16px;
+    font-family: "Lato-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+
+.presentation__download-from {
+    margin-top: 67px;
+    margin-bottom: 23px;
+    font-size: 12px;
+    font-family: "Lato-Regular", sans-serif;
+    color: rgba(58, 61, 75, 0.302);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.comments  {
+    padding-top: 118px;
+    padding-bottom: 128px;
+}
+
+.comments-slider__users {
+    max-width: 1170px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.comments-slider__users-img {
+    justify-content: center;
+    align-items: center;
+    gap: 117px;
+    display: flex;
+}
+
+.comments-slider__user img {
+    opacity: 0.2;
+    width: 90px;
+    height: 90px;
+    box-shadow: unset;
+    border-radius: 50%;
+}
+
+.comments-slider__user.active-img img {
+    opacity: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 40px 40px 0 rgba(92, 95, 101, 0.28);
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+
+
+.comments-slider__show-feedbacks {
+    margin: 0 auto;
+    width: 570px;
+    overflow-x: hidden;
+}
+
+.comments-slider__feedbacks {
+   margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.comments-slider__feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 570px;
+    flex-shrink: 0;
+}
+
+.comments-slider__feedback-title {
+    font-size: 32px;
+    font-family: "Lato-Light", sans-serif;
+    color: rgb(38, 39, 45);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.comments-slider__feedback-text {
+    font-size: 20px;
+    font-family: "Lato-Regular", sans-serif;
+    color: rgb(140, 143, 148);
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.comments-slider__feedback-stars {
+    display: flex;
+    gap: 9px;
+    margin-bottom: 68px;
+}
+
+.comments-slider__feedback-name {
+    font-size: 12px;
+    font-family: "Lato-Bold", sans-serif;
+    color: rgb(38, 39, 45);
+    text-transform: uppercase;
+}
+.user1 , .user2 , .user3{
+    transition: .5s;
+    transform: translateX(-570px);
+}
