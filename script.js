@@ -3,14 +3,13 @@ let a = users.length
 let currentIndex = 1
 let feedback = $('.comments-slider__feedback')
 
-console.log(a)
-console.log(currentIndex)
+
 
 $('.arrow-right').click(function () {
     hideFeedback()
     currentIndex += 1
     if (currentIndex > 2) {
-        $('.arrow-right').disable()
+        currentIndex = 2
     }
     var user = users.eq(currentIndex);
     users.removeClass('active-img')
@@ -23,7 +22,7 @@ $('.arrow-left').click(function () {
     hideFeedbackLeft()
     currentIndex -= 1
     if (currentIndex < 0) {
-        $('.arrow-left').disable()
+        currentIndex = 0
     }
     var user = users.eq(currentIndex);
     users.removeClass('active-img')
