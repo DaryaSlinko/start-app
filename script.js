@@ -15,8 +15,8 @@ $('.arrow-right').click(function () {
     users.removeClass('active-img')
     user.addClass('active-img')
     showFeedback()
-
 })
+
 
 $('.arrow-left').click(function () {
     hideFeedbackLeft()
@@ -68,3 +68,62 @@ function showFeedbackLeft() {
     // }
     feedback.eq(currentIndex).css('display', 'flex').removeClass('active-user-next').addClass('active-user-prev')
 }
+
+
+//выбор плана по клику
+
+$('.plan').click(function (event) {
+    if (!($(this).hasClass('chosen-plan'))) {
+        showWhiteChosenPlan.call(this)
+    }
+
+})
+
+function showWhiteChosenPlan() {
+    if ($(this).hasClass('plan1')) {
+        $('.plan1').addClass('chosen-plan')
+        $('.plan2').removeClass('chosen-plan')
+    }
+    if ($(this).hasClass('plan2')) {
+        $('.plan2').addClass('chosen-plan')
+        $('.plan1').removeClass('chosen-plan')
+    }
+
+}
+
+//выбор компания или индивидуально
+$('.individudal').css('color', 'black')
+
+$('.choose-plan__option').click(function (event) {
+        showWhiteChosenOption.call(this)
+})
+
+function showWhiteChosenOption() {
+    if ($(this).hasClass('individudal')){
+        $('.chosen-option').css({
+            'transform' : 'translateX(0)'
+        });
+        $('.individudal').css('color', 'black')
+        $('.company').css('color', '#a0a1a4')
+    }
+    if ($(this).hasClass('company')){
+        $('.chosen-option').css({
+            'transform' : 'translateX(124px)'
+        });
+        $('.individudal').css('color', '#a0a1a4')
+        $('.company').css('color', 'black')
+    }
+
+
+}
+
+
+//Меню открытие
+
+$('.burger-menu').click(function () {
+    $('.top-menu').removeClass('close').addClass('open')
+});
+
+$('.menu-items img, .menu-items li, .menu__socials, .menu-items .btn, .menu-items svg').click(function () {
+    $('.top-menu').removeClass('open').addClass('close')
+});

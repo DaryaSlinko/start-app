@@ -1,0 +1,124 @@
+@media screen and (max-width: 1250px) {
+    .last-info .container {
+       grid-template-columns: 55% 45%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    section {
+        padding: 0 40px;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .last-info .container {
+        grid-template-columns: 48% 52%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .menu-items {
+        display: none;
+    }
+
+    .help-menu-items {
+        display: none;
+    }
+
+    .about-app-info__first-block {
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 100px;
+    }
+
+    .choose-plan {
+        flex-direction: column;
+    }
+
+    .choose-plan-info-text {
+        margin-bottom: 50px;
+    }
+
+    .choose-plan__title {
+        max-width: unset;
+        margin-bottom: 40px;
+    }
+
+    .choose-plan__text {
+        max-width: unset;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .last-info .container {
+        display: flex;
+       flex-direction: column;
+        gap: 50px;
+        align-items: start;
+    }
+
+    .last-info__text {
+        max-width: unset;
+    }
+}
+@media screen and (max-width: 800px) {
+    .title {
+        font-size: 52px;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .choose-plan__plans {
+        display: flex;
+        flex-direction: column;
+    }
+    .plan2 {
+        left: 20px;
+        top: -20px;
+    }
+    .choose-plan{
+        justify-content: start;
+        height: 1700px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .comments-slider__users-img {
+        gap: 50px;
+    }
+    .comments-slider__show-feedbacks {
+        margin: 0 auto;
+        width: 570px;
+        overflow-x: hidden;
+    }
+
+    .comments-slider__feedback {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 570px;
+        flex-shrink: 0;
+    }
+    .user1, .user2, .user3 {
+        transition: .5s;
+        transform: translateX(-570px);
+    }
+}
+@media screen and (max-width: 650px) {
+    .help-menu .get-app-btn.btn {
+        display: none;
+    }
+
+    .title {
+        font-size: 43px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .title {
+        font-size: 38px;
+    }
+
+    .under-title {
+        font-size: 15px;
+    }
+}
