@@ -111,6 +111,11 @@
         font-size: 43px;
     }
 }
+@media screen and (max-width: 640px) {
+    .comments{
+        display: none;
+    }
+}
 
 @media screen and (max-width: 550px) {
 
